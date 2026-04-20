@@ -19,6 +19,16 @@
             background-size: cover;
             background-position: center;
         }
+
+        @keyframes blink-red {
+            0% { background-color: #ffcccc; }
+            50% { background-color: #ff6666; }
+            100% { background-color: #ffcccc; }
+        }
+
+        .alert {
+            animation: blink-red 2.5s infinite;
+        }
     </style>
 </head>
 
@@ -40,6 +50,14 @@
             </div>
         </nav>
     </div>
+
+    <section class="py-10">
+        <div class="container mx-auto px-6 text-center">
+            <div class="alert text-white font-bold text-xl py-4 px-6 rounded-lg inline-block">
+                🔥 ¡ALERTA DE TEMPORADA! PROTEGE TU HOGAR CON NUESTROS DESCUENTOS DE CALOR 🔥
+            </div>
+        </div>
+    </section>
 
     <header class="hero-bg h-[600px] flex items-center text-white">
         <div class="container mx-auto px-6">
